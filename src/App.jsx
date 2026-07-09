@@ -14,7 +14,7 @@ function App() {
   return (
     <section className="container my-2">
       <ul>
-        {cars.map(car => <li key={car.id}>I am a {car.brand}</li>)}
+        {cars.map((car, index) => <li key={index}>I am a {car.brand}</li>)}
       </ul>
       
     </section>
